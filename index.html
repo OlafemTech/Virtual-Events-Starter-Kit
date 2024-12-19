@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Events Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Virtual Events</div>
+        <div class="nav-menu">
+            <a href="#stages" class="nav-link">Stages</a>
+            <a href="#sponsors" class="nav-link">Sponsors</a>
+            <a href="#career-fair" class="nav-link">Career Fair</a>
+            <a href="#schedule" class="nav-link">Schedule</a>
+            <button id="loginBtn" class="btn-primary">Login</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Stages Section -->
+        <section id="stages" class="section">
+            <h2>Event Stages</h2>
+            <div class="stages-container">
+                <div class="stage-card">
+                    <h3>Main Stage</h3>
+                    <div class="video-container" id="mainStage">
+                        <!-- Video player will be inserted here -->
+                    </div>
+                    <div class="stage-controls">
+                        <button class="btn-secondary">Join Stream</button>
+                        <button class="btn-secondary">Chat</button>
+                    </div>
+                </div>
+                <div class="stage-card">
+                    <h3>Workshop Stage</h3>
+                    <div class="video-container" id="workshopStage">
+                        <!-- Video player will be inserted here -->
+                    </div>
+                    <div class="stage-controls">
+                        <button class="btn-secondary">Join Stream</button>
+                        <button class="btn-secondary">Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="section">
+            <h2>Sponsor Expo</h2>
+            <div class="sponsors-grid">
+                <!-- Sponsor booths will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Career Fair Section -->
+        <section id="career-fair" class="section">
+            <h2>Career Fair</h2>
+            <div class="career-opportunities">
+                <!-- Job listings will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section">
+            <h2>Event Schedule</h2>
+            <div class="schedule-container">
+                <div class="schedule-filters">
+                    <button class="btn-filter active" data-day="all">All Days</button>
+                    <button class="btn-filter" data-day="day1">Day 1</button>
+                    <button class="btn-filter" data-day="day2">Day 2</button>
+                </div>
+                <div class="schedule-timeline">
+                    <!-- Schedule items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Templates -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <button class="btn-github">
+                <i class="fab fa-github"></i> Login with GitHub
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Virtual Events Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/stages.js"></script>
+    <script src="js/sponsors.js"></script>
+    <script src="js/career.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>
